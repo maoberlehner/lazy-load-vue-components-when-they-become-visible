@@ -13,8 +13,10 @@
   "dependencies": {
     "@avalanche/generic-box-sizing-reset": "^4.0.0-alpha.5",
     "@avalanche/object-container": "^4.0.0-alpha.8",
+    "@avalanche/object-grid": "^4.0.0-alpha.15",
     "@avalanche/object-vertical-spacing": "^4.0.0-alpha.5",
     "@avalanche/setting-spacings": "^4.0.0-alpha.6",
+    "@avalanche/utility-width": "^4.0.0-alpha.8",
     "@vue/cli-plugin-babel": "^3.2.0",
     "@vue/cli-service": "^3.2.0",
     "node-sass": "^4.11.0",

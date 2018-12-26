@@ -21,6 +21,13 @@
   dependencies:
     "@avalanche/setting-spacings" "^4.0.0-alpha.6"
 
+"@avalanche/object-grid@^4.0.0-alpha.15":
+  version "4.0.0-alpha.15"
+  resolved "https://registry.yarnpkg.com/@avalanche/object-grid/-/object-grid-4.0.0-alpha.15.tgz#85a988a3fe13f12e9047687f2e25e0be9f09e0bf"
+  integrity sha1-hamIo/4T8S6QR2h/LiXgvp8J4L8=
+  dependencies:
+    "@avalanche/setting-spacings" "^4.0.0-alpha.6"
+
 "@avalanche/object-vertical-spacing@^4.0.0-alpha.5":
   version "4.0.0-alpha.5"
   resolved "https://registry.yarnpkg.com/@avalanche/object-vertical-spacing/-/object-vertical-spacing-4.0.0-alpha.5.tgz#b907a304e2dd58fefa407b255499e112503a5801"
@@ -28,10 +35,22 @@
   dependencies:
     "@avalanche/setting-spacings" "^4.0.0-alpha.6"
 
+"@avalanche/setting-breakpoints@^4.0.0-alpha.5":
+  version "4.0.0-alpha.5"
+  resolved "https://registry.yarnpkg.com/@avalanche/setting-breakpoints/-/setting-breakpoints-4.0.0-alpha.5.tgz#e06a8efbbf1f4415d002fe268d5f09927daf52f4"
+  integrity sha1-4GqO+78fRBXQAv4mjV8Jkn2vUvQ=
+
 "@avalanche/setting-spacings@^4.0.0-alpha.6":
   version "4.0.0-alpha.6"
   resolved "https://registry.yarnpkg.com/@avalanche/setting-spacings/-/setting-spacings-4.0.0-alpha.6.tgz#d395e3b4233601336c6e8759dd3499171681dbfb"
   integrity sha1-05XjtCM2ATNsbodZ3TSZFxaB2/s=
+
+"@avalanche/utility-width@^4.0.0-alpha.8":
+  version "4.0.0-alpha.8"
+  resolved "https://registry.yarnpkg.com/@avalanche/utility-width/-/utility-width-4.0.0-alpha.8.tgz#a96e7c606be3316095c0c342403c6bbd15edf8db"
+  integrity sha1-qW58YGvjMWCVwMNCQDxrvRXt+Ns=
+  dependencies:
+    "@avalanche/setting-breakpoints" "^4.0.0-alpha.5"
 
 "@babel/code-frame@^7.0.0":
   version "7.0.0"

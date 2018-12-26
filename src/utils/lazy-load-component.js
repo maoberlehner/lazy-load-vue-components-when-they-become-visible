@@ -28,7 +28,7 @@ export default function lazyLoadComponent({
           // TODO remove timeout
           setTimeout(() => {
             componentFactory().then(resolveComponent);
-          }, 4000);
+          }, 500);
         });
         observer.observe(this.$el);
       },

@@ -64,7 +64,9 @@
       </MediaObject>
     </div>
 
-    <!-- TeaserGrid -->
+    <div class="o-container">
+      <TeaserGrid/>
+    </div>
 
     <!-- TextBox -->
 
@@ -100,6 +102,10 @@ export default {
       ...defaultOptions,
       componentFactory: () => import(`./components/MediaObject.vue`),
     }),
+    TeaserGrid: lazyLoadComponent({
+      ...defaultOptions,
+      componentFactory: () => import(`./components/TeaserGrid.vue`),
+    }),
   },
 };
 </script>
@@ -112,9 +118,16 @@ export default {
   .o-container--s,
 } from ~@avalanche/object-container';
 @import '{
+  .o-grid,
+} from ~@avalanche/object-grid';
+@import '{
   .o-vertical-spacing,
   .o-vertical-spacing--xl,
 } from ~@avalanche/object-vertical-spacing';
+@import '{
+  .u-width-12\/12,
+  .u-width-4\/12\@s,
+} from ~@avalanche/utility-width';
 
 .s-content {
   * + * {
