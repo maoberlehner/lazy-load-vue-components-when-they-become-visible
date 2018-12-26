@@ -25,10 +25,7 @@ export default function lazyLoadComponent({
           if (entries[0].intersectionRatio <= 0) return;
 
           observer.unobserve(this.$el);
-          // TODO remove timeout
-          setTimeout(() => {
-            componentFactory().then(resolveComponent);
-          }, 500);
+          componentFactory().then(resolveComponent);
         });
         observer.observe(this.$el);
       },
