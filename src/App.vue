@@ -20,21 +20,47 @@
 
     <div class="o-container">
       <MediaObject>
-        <img src="" alt="" slot="image">
-        <h2>Lorem Ipsum</h2>
-        <p>
-          Lorem Ipsum
-        </p>
+        <img
+          slot="image"
+          src="https://images.unsplash.com/photo-1510151490593-aa277bc49f37?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=300&q=80"
+          src-set="https://images.unsplash.com/photo-1510151490593-aa277bc49f37?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&h=600&q=20 2x"
+          alt=""
+        >
+        <div class="s-content">
+          <h2>Lorem Ipsum</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua.
+          </p>
+          <p>
+            Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+            ut labore et dolore magna aliquyam erat, sed diam voluptua.
+          </p>
+        </div>
       </MediaObject>
     </div>
 
     <div class="o-container">
       <MediaObject>
-        <img src="" alt="" slot="image">
-        <h2>Dolor sit</h2>
-        <p>
-          Lorem Ipsum
-        </p>
+        <img
+          slot="image"
+          src="https://images.unsplash.com/photo-1509904446473-1b8b71534223?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=300&q=80"
+          src-set="https://images.unsplash.com/photo-1509904446473-1b8b71534223?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&h=600&q=20 2x"
+          alt=""
+        >
+        <div class="s-content">
+          <h2>Dolor sit</h2>
+          <p>
+            Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+            ut labore et dolore magna aliquyam erat, sed diam voluptua.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua.
+          </p>
+        </div>
       </MediaObject>
     </div>
 
@@ -89,6 +115,12 @@ export default {
   .o-vertical-spacing,
   .o-vertical-spacing--xl,
 } from ~@avalanche/object-vertical-spacing';
+
+.s-content {
+  * + * {
+    margin-top: setting-spacing(m);
+  }
+}
 
 .App {
   padding-top: setting-spacing(xl);
