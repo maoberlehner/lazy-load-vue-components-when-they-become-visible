@@ -68,9 +68,11 @@
       <TeaserGrid/>
     </div>
 
-    <!-- TextBox -->
-
-    <!-- Footer -->
+    <div class="o-container">
+      <MarkdownText
+        :md="markdown"
+      />
+    </div>
   </div>
 </template>
 
@@ -98,6 +100,10 @@ export default {
   components: {
     BannerImage,
     IntroText,
+    MarkdownText: lazyLoadComponent({
+      ...defaultOptions,
+      componentFactory: () => import(`./components/MarkdownText.vue`),
+    }),
     MediaObject: lazyLoadComponent({
       ...defaultOptions,
       componentFactory: () => import(`./components/MediaObject.vue`),
@@ -106,6 +112,14 @@ export default {
       ...defaultOptions,
       componentFactory: () => import(`./components/TeaserGrid.vue`),
     }),
+  },
+  created() {
+    this.markdown = `
+## Lorem Ipsum
+
+Consetetur sadipscing elitr, **sed diam nonumy** eirmod tempor invidunt
+ut labore et *dolore* magna aliquyam erat, sed diam voluptua.
+    `;
   },
 };
 </script>
@@ -132,6 +146,14 @@ export default {
 .s-content {
   * + * {
     margin-top: setting-spacing(m);
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  strong {
+    font-weight: bold;
   }
 }
 
