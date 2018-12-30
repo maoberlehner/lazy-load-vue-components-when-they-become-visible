@@ -5,8 +5,8 @@
         <h1 slot="headline">
           Lazy Load Vue.js Components When They Become Visible
         </h1>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna.
+        The following sections of this page (except the very next banner image)
+        are lazy loaded as soon as they become visible.
       </IntroText>
     </div>
 
